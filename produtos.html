@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bem vindo à Draven</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oxygen:wght@300;400;700&family=Squada+One&display=swap');
+    </style>
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <style>
+        html,body{
+            overflow-x: hidden;
+        }
+
+        header {
+      background-color: #44131c;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul  li a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 650;
+  border-radius: 35px 9px;
+  padding: 8.5px 17px 8.5px 17px;
+  color: #fff;
+  transition: background all .050s ;
+}
+
+header ul li a:hover{
+  border-radius: 9px 25px;
+  transition: 0.7s;
+  background-color: #270202;
+  color: #ffffff;
+}
+
+header .contato{
+  background-color: #ffffff;
+  color: #44131c;
+  border-radius: 9px 25px;
+  padding: 10px 18.5px 10px 18.5px;
+  border: solid 2px #d8d8d8; 
+  margin-left:50px;
+}
+header .contato:hover{
+  color: #ffffff;
+  background-color: #270202;
+  border: solid 2.4px #fff;
+  border-radius: 25px 9px;
+}
+     </style>
+</head>
+
+<body>
+    <header id="main-header" class="main-header" style="background-color: #44131c;">
+        <a href="index.html"><img src="images/logo_barras.png" alt="" class="logo"></a>
+        <div class="mobile_menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="navlist" style="background-color: #44131cc7;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="fale_conosco.html">Ajuda</a></li>
+            <li><a href="sobre_nos.html">Quem somos</a></li>
+            <li><a class="contato" href="encomende.html">Encomendar</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1 class="h1_produtos">Nossos produtos</h1>
+        <section class="guitarra_produto" id="guitarra">
+            <img src="images/produtos_guitarra_2.jpg" alt="" class="guitarra_img">
+            <nav class="guitarra_texto">
+                <h2>QUAIS GUITARRAS A DRAVEN TE OFERECE?</h2>
+                <p><div class="paragrafo_1">Trabalhamos com marcas renomadas que oferecem inovação e qualidade excepcionais. A Mayones se destaca
+                    pela construção impecável e timbre equilibrado, enquanto a Ruf Guitars aposta em designs ergonômicos
+                    e madeiras exóticas.A Aristides revoluciona com o material Arium, proporcionando sustain e
+                    estabilidade inigualáveis. Já a Strandberg se diferencia pelo design headless, escalas multiscale e
+                    conforto extremo. Cada uma dessas marcas entrega um nível único de excelência para músicos
+                    exigentes.</div><br><br><div class="paragrafo_2">Se você sonha em ter uma guitarra única, feita para se destacar tanto em timbre
+                    quanto em design, a Draven Guitars é o seu destino. Entre em contato e comece a criar seu
+                    instrumento dos sonhos hoje mesmo!<br><br><br></div><a href="encomende.html"><button>Encomende
+                            Já</button></a></p>
+            </nav>
+        </section>
+
+
+        <section class="baixo_produto" id="baixo">
+            <nav class="baixo_texto">
+                <h2>QUAIS BAIXOS A DRAVEN TE OFERECE?</h2>
+                <p><div class="paragrafo_3">Trabalhamos com marcas renomadas que oferecem inovação e qualidade excepcionais. A Mayones se destaca
+                    pela construção impecável e timbre equilibrado, sendo ideal para baixistas que buscam precisão e
+                    definição. A Aristides, por sua vez, revoluciona com o material Arium, proporcionando sustain e
+                    estabilidade inigualáveis, garantindo um som robusto e marcante. Ambas as marcas entregam um nível
+                    único de excelência para músicos exigentes.</div><br><br><div class="paragrafo_4">Se você sonha em ter um baixo único, feito para
+                    se destacar tanto em timbre quanto em design, a Mayones e a Aristides são o seu destino. Entre em
+                    contato e comece a criar seu instrumento dos sonhos hoje mesmo!<br><br><br></div><a
+                        href="encomende.html"><button>Encomende Já</button></a></p>
+            </nav>
+            <img src="images/produtos_baixo.jpeg" alt="" class="baixo_img">
+        </section>
+
+        <!-- <nav class="exclusividades">
+            <img src="images/linha.png" alt="">
+            <h2 class="titulo_produtos">Exclusividades da <span>Draven</span></h2>
+            <img src="images/linha.png" alt="">
+        </nav>
+
+        <section class="mostrar_produtos">
+            <article>
+                <img src="images/aristides_produto_3.jpg" alt="" height="500">
+                <h2>Aristides</h2>
+                <p>A guitarra Aristides de 6 cordas, em Arium, oferece timbre excepcional e sustain prolongado.<a
+                        href="encomende.html"><button>Saiba mais</button></a></p>
+                </p>
+            </article>
+            <article>
+                <img src="images/mayones_produto_2_rotated.jpg" alt="">
+                <h2>Mayones</h2>
+                <p>O baixo Mayones de 5 cordas oferece timbre equilibrado, definição e conforto excepcionais.<a
+                        href="encomende.html"><button>Saiba mais</button></a></p>
+                </p>
+            </article>
+            <article>
+                <img src="images/strandberg_produto.webp" alt="">
+                <h2>Strandberg</h2>
+                <p>A guitarra Strandberg de 8 cordas oferece conforto, timbre poderoso e precisão excepcionais.<a
+                        href="encomende.html"><button>Saiba mais</button></a></p>
+                </p>
+            </article>
+        </section> -->
+
+
+        <section class="slider_produtos">
+            <section class="list_produtos">
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (14)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/slider_produtos_5-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (11)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (15)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (10)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (16)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (12)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (13)-Photoroom.png" alt="">
+                </section>
+                <section class="item_produtos">
+                    <img src="images/Design sem nome (17)-Photoroom.png" alt="">
+                </section>
+            </section>
+            <div class="circle"></div>
+            <div class="content_produtos">
+                <div>Equipamentos</div>
+                <div>Exclusivos</div>
+                <button>Ver mais</button>
+            </div>
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </section>
+
+ 
+        <section class="guitarra_produto" id="pedal">
+            <img src="images/produtos_pedal.jpg" alt="" class="guitarra_img">
+            <nav class="guitarra_texto">
+                <h2>QUAIS PEDALEIRAS A DRAVEN TE OFERECE?</h2>
+                <p><div class="paragrafo_1">rabalhamos com marcas renomadas que oferecem inovação e qualidade excepcionais. A Boss se destaca pela durabilidade e versatilidade de seus pedais, sendo uma escolha confiável para diversos estilos. A Electro-Harmonix é referência em efeitos criativos e timbres únicos, amplamente usada no rock e experimental. A Line 6 revolucionou com suas pedaleiras digitais, oferecendo simulações realistas e grande flexibilidade. Já a Strymon é sinônimo de qualidade premium, com reverbs e delays altamente sofisticados. Cada uma dessas marcas entrega um nível único de excelência para músicos exigentes.</div><br><br><div class="paragrafo_2">Se você busca pedais ou pedaleiras que expandam suas possibilidades sonoras, a Draven Guitars é o seu destino. Entre em contato e encontre o equipamento ideal para o seu som hoje mesmo!<br><br><br></div><a href="encomende.html"><button>Encomende
+                            Já</button></a></p>
+            </nav>
+        </section>
+
+        <section class="baixo_produto" id="amps">
+            <nav class="baixo_texto">
+                <h2>QUAIS AMPS A DRAVEN TE OFERECE?</h2>
+                <p><div class="paragrafo_3">Trabalhamos com marcas renomadas que oferecem inovação e qualidade excepcionais. A Marshall se destaca pela distorção icônica e potência lendária, sendo a escolha de muitos guitarristas de rock e metal. A Fender é referência em timbres cristalinos e dinâmicos, perfeita para blues, country e jazz. A Gibson, além de suas guitarras clássicas, também marcou presença com amplificadores de som encorpado e vintage. Cada uma dessas marcas entrega um nível único de excelência para músicos exigentes.</div><br><br><div class="paragrafo_4">Se você busca um amplificador que realce sua identidade sonora e eleve sua performance, a Draven Guitars é o seu destino. Entre em contato e encontre o equipamento ideal para o seu som hoje mesmo!<br><br><br></div><a
+                        href="encomende.html"><button>Encomende Já</button></a></p>
+            </nav>
+            <img src="images/produtos_amps_2.jpg" alt="" class="baixo_img">
+        </section>
+
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <nav class="footer_inicial">
+            <img src="images/imagem_footer.jpg" alt="">
+            <h1>DRAVEN</h1><!-- font-family: "Squada One", serif; -->
+            <div class="social__footer">
+                <a href="" class="facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="" class="twitter"><i class="ri-twitter-x-line"></i></a>
+                <a href="" class="linkedin"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://www.instagram.com/dravenguitarshop/" class="instagram"><i class="ri-instagram-line"></i></a>
+                <a href="" class="youtube"><i class="ri-youtube-fill"></i></i></a>
+            </div>
+        </nav>
+        <hr>
+        <section class="footer_body">
+            <nav class="footer__links">
+                <h1><span>Instituc</span>ional</h1>
+                <a href="index.html"><p>Home</p></a>
+                <a href="fale_conosco.html"><p>Fale conosco</p></a>
+                <a href="sobre_nos.html"><p>Sobre nós</p></a>
+                <a href="encomende.html"><p>Encomende já</p></a>
+            </nav>
+            <nav class="footer__links">
+                <h1><span>Serv</span>iços</h1>
+                <a href="produtos.html#guitarra"><p>Guitarras</p></a>
+                <a href="produtos.html#baixo"><p>Baixos</p></a>
+                <a href="produtos.html#pedal"><p>Pedais e pedaleiras</p></a>
+                <a href="produtos.html#amps"><p>Amplificadores</p></a>
+            </nav>
+            <nav class="footer__links">
+                <h1><span>Dúv</span>idas</h1>
+                <a href=""><p>Devoluções</p></a>
+                <a href=""><p>Fale com a gente</p></a>
+                <a href=""><p>Dúvidas frequentes</p></a>
+                <a href=""><p>Processo de entrega</p></a>
+            </nav>
+            <nav class="footer__links">
+                <h1><span>Políti</span>cas e <span>regulam</span>entos</h1>
+                <a href=""><p>Regras do site</p></a>
+                <a href=""><p>Politica de segurança</p></a>
+                <a href=""><p>Regras para compras internacionais</p></a>
+                <a href=""><p>Termos & condições</p></a>
+            </nav>
+            <nav class="footer__links">
+                <nav class="novidades">
+                    <h1><span>Novid</span>ades</h1>
+                    <form action="">
+                        <input type="text" name="email" id="email" placeholder="Digite seu email..." required>
+                        <label for="email"></label>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </nav>
+            </nav>
+        </section>
+
+        <section class="footer_end">
+            <p>Copyright &copy; 2025 Draven Guitars. <span>Todos os direitos reservados</span></p>
+            <a href="">
+                <h6>Politica de privacidade</h6>
+            </a>
+            <a href="">
+                <h6>Termos & condições</h6>
+            </a>
+        </section>
+    </footer>
+    <div class="loader-wrapper">
+        <div class="hourglass"></div>
+        </div>
+<script>
+
+$(window).on("load", function(){
+   $(".loader-wrapper").fadeOut(800)
+   ( $("body").removeClass("preload") )
+   ( $("body").removeClass("preload") )
+})
+
+    ScrollReveal(
+        {reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400});
+
+        ScrollReveal().reveal('.h1_produtos', { delay: 10, origin:'left' });
+        ScrollReveal().reveal('.guitarra_produto .guitarra_img', { delay: 20, origin:'left' });
+        ScrollReveal().reveal('.guitarra_produto .guitarra_texto h2', { delay: 50, origin:'left' });
+        ScrollReveal().reveal('.guitarra_produto .paragrafo_1', { delay: 90, origin:'left' });
+        ScrollReveal().reveal('.guitarra_produto .paragrafo_2', { delay: 110, origin:'left' });
+        ScrollReveal().reveal('.guitarra_produto button', { delay: 130, origin:'left' });
+        ScrollReveal().reveal('.baixo_produto .baixo_img', { delay: 20, origin:'right' });
+        ScrollReveal().reveal('.baixo_produto .baixo_texto h2', { delay: 50, origin:'right' });
+        ScrollReveal().reveal('.baixo_produto .paragrafo_3', { delay: 90, origin:'right' });
+        ScrollReveal().reveal('.baixo_produto .paragrafo_4', { delay: 110, origin:'right' });
+        ScrollReveal().reveal('.baixo_produto button', { delay: 130, origin:'right' });
+        ScrollReveal().reveal('.exclusividades img', { delay: 200, origin:'top', distance: '20px' });
+        ScrollReveal().reveal('.exclusividades h2', { delay: 120, origin:'top', distance: '20px' });
+        ScrollReveal().reveal('.mostrar_produtos article', { delay: 100, origin:'bottom', interval: 200 });
+
+        let circle = document.querySelector('.circle');
+let slider = document.querySelector('.slider_produtos');
+let list = document.querySelector('.list_produtos');
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+let items = document.querySelectorAll('.list_produtos .item_produtos');
+let count = items.length;
+let active = 4;
+let leftTransform = 0;
+let width_item = items[active].offsetWidth;
+
+next.onclick = () => {
+    active = active >= count - 1 ? count - 1 : active + 1;
+    runCarousel();
+}
+prev.onclick = () => {
+    active = active <= 0 ? active : active - 1;
+    runCarousel();
+}
+function runCarousel() {
+    prev.style.display = (active == 0) ? 'none' : 'block';
+    next.style.display = (active == count - 1) ? 'none' : 'block';
+
+
+    let old_active = document.querySelector('.item_produtos.active');
+    if(old_active) old_active.classList.remove('active');
+    items[active].classList.add('active');
+
+     leftTransform = width_item * (active - 1) * -1;
+    list.style.transform = `translateX(${leftTransform}px)`;
+}
+runCarousel();
+
+
+// Set Text on a Circle
+let textCircle = circle.innerText.split('');
+circle.innerText = '';
+textCircle.forEach((value, key) => {
+    let newSpan =  document.createElement("span");
+    newSpan.innerText = value;
+    let rotateThisSpan = (360 / textCircle.length) * (key + 1);
+    newSpan.style.setProperty('--rotate', rotateThisSpan + 'deg');
+    circle.appendChild(newSpan); 
+});
+
+
+class MobileNavbar{
+   constructor(mobileMenu, navList, navLinks){
+      this.mobileMenu = document.querySelector(mobileMenu)
+      this.navList = document.querySelector(navList)
+      this.navLinks = document.querySelectorAll(navLinks)
+      this.activeClass = "active";
+      this.handleClick = this.handleClick.bind(this)
+   }
+
+   animateLinks(){
+      this.navLinks.forEach((link) => {
+         link.style.animation 
+            ? (link.style.animation = "") :
+            (link.style.animation = `navLinkFade 0.5s ease forwards 0.3s`)
+      })
+   }
+
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass)
+      this.mobileMenu.classList.toggle(this.activeClass)
+      this.animateLinks()
+    }
+
+   addClickEvent(){
+      this.mobileMenu.addEventListener("click", this.handleClick)
+   }
+   init(){
+      if (this.mobileMenu) {
+         this.addClickEvent();
+      }
+      return this
+   }
+}
+   const mobileNavbar = new MobileNavbar (
+      ".mobile_menu",
+      ".navlist",
+      "navlist li",
+   )
+mobileNavbar.init()
+
+function toggleMenu(element) {
+   if (window.innerWidth <= 768) {
+       var paragraph = element.querySelector("p");
+       if (paragraph.style.display === "block") {
+           paragraph.style.display = "none";
+           element.classList.remove("open");
+       } else {
+           paragraph.style.display = "block";
+           element.classList.add("open");
+       }
+   }
+}
+ 
+        
+</script>
+
+</body>
+
+</html>

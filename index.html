@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bem vindo à Draven</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oxygen:wght@300;400;700&family=Squada+One&display=swap');
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <header id="main-header" class="main-header">
+        <a href="index.html"><img src="images/logo_barras.png" alt="" class="logo"></a>
+        <div class="mobile_menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="navlist">
+            <li><a class="verdade" href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="fale_conosco.html">Ajuda</a></li>
+            <li><a href="sobre_nos.html">Quem somos</a></li>
+            <li><a class="contato" href="encomende.html">Encomendar</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="carousel">
+            <h1>Encontre os equipamentos e instrumentos dos seus sonhos
+                <p>Através da importação, temos acesso direto das fabricantes a produtos exclusivos de varios
+                    seguimentos dos instrumentos elétricos, basta escolher o modelo do equipamento desejado que trazemos
+                    para o Brasil. Fazemos a mediação entre o cliente e o seu sonho. Para mais informações, entre em
+                    contato.</p>
+                <a href="encomende.html"><button>Encomende Já</button></a>
+            </h1>
+
+            <div class="pic-ctn">
+                <img src="images/carousel_5-Photoroom.png" alt="" class="pic">
+                <img src="images/carousel_1-Photoroom.png" alt="" class="pic">
+                <img src="images/carousel_2-Photoroom.png" alt="" class="pic">
+                <img src="images/carousel_3-Photoroom.png" alt="" class="pic">
+                <img src="images/carousel_4-Photoroom.png" alt="" class="pic">
+            </div>
+        </section>
+        <section class="info">
+            <nav class="info__cards">
+                <article onclick="toggleMenu(this)">
+                    <i class="ri-truck-fill"></i>
+                    <h3 class="h3_1">Entrega grátis</h3>
+                    <p>Após a chegada no Brasil, os produtos são enviados com frete grátis para seu endereço.</p>
+                </article>
+                <article onclick="toggleMenu(this)">
+                    <i class="ri-refund-2-line"></i>
+                    <h3 class="h3_2">Garantia no pagamento</h3>
+                    <p>Aceitamos todas as formas de pagamento e temos garantia de reembolso caso necessário.</p>
+                </article>
+                <article onclick="toggleMenu(this)">
+                    <i class="ri-sound-module-fill"></i>
+                    <h3 class="h3_3">7 dias de teste</h3>
+                    <p>Disponibilizamos 7 dias de teste dos instrumentos e equipamentos antes da compra final.</p>
+                </article>
+                <article onclick="toggleMenu(this)">
+                    <i class="ri-questionnaire-fill"></i>
+                    <h3 class="h3_4">Suporte 24 horas</h3>
+                    <p>Nossa equipe de suporte está de prontidão nos atendimentos 24 horas por dia.</p>
+                </article>
+            </nav>
+        </section>
+        <section class="slider">
+            <section class="list">
+                <section class="item active" style="
+                        --img-url: url('images/guitarra_slider-Photoroom.png');
+                        --bg-color: #000;
+                        --title: 'Guitarras';
+                        ">
+                    <section class="content">
+                        <nav class="image"></nav>
+                        <nav class="informs">
+                            <div class="produto">
+                                Guitarras Exclusivas
+                            </div>
+                            <div class="categoria" style="font-size: 16px;">
+                                — Instrumentos —
+                            </div>
+                            <div class="descricao" style="font-size: 16px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cupiditate eos labore
+                                architecto consequuntur repellat obcaecati ipsam perferendis amet, vel quam facere,
+                                reprehenderit natus. Odit, ratione accusamus! Consectetur, rerum unde.
+                            </div>
+                            <a href="produtos.html#guitarra">Veja mais <span>&#8594</span></a>
+                        </nav>
+                    </section>
+                </section>
+                <section class="item" style="
+                        --img-url: url('images/baixo_slider-Photoroom-4.png');
+                        --bg-color: #242222;
+                        --title: 'Baixos';
+                        ">
+                    <section class="content">
+                        <nav class="image"></nav>
+                        <nav class="informs">
+                            <div class="produto">
+                                Baixos Únicos
+                            </div>
+                            <div class="categoria" style="font-size: 16px;">
+                                — Instrumentos —
+                            </div>
+                            <div class="descricao" style="font-size: 16px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cupiditate eos labore
+                                architecto consequuntur repellat obcaecati ipsam perferendis amet, vel quam facere,
+                                reprehenderit natus. Odit, ratione accusamus! Consectetur, rerum unde.
+                            </div>
+                            <a href="produtos.html#baixo">Veja mais <span>&#8594</span></a>
+                        </nav>
+                    </section>
+                </section>
+                <section class="item" style="
+                        --img-url: url('images/pedal-slider-Photoroom.png');
+                        --bg-color: #420501;
+                        --title: 'Pedais';
+                        ">
+                    <section class="content">
+                        <nav class="image"></nav>
+                        <nav class="informs">
+                            <div class="produto">
+                                Pedais e Pedaleiras
+                            </div>
+                            <div class="categoria" style="font-size: 16px;">
+                                — Equipamentos —
+                            </div>
+                            <div class="descricao" style="font-size: 16px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cupiditate eos labore
+                                architecto consequuntur repellat obcaecati ipsam perferendis amet, vel quam facere,
+                                reprehenderit natus. Odit, ratione accusamus! Consectetur, rerum unde.
+                            </div>
+                            <a href="produtos.html#pedal">Veja mais <span>&#8594</span></a>
+                        </nav>
+                    </section>
+                </section>
+                <section class="item" style="
+                        --img-url: url('images/Design\ sem\ nome\ \(2\)-Photoroom.png');
+                        --bg-color: #011731;
+                        --title: 'Amps';
+                        ">
+                    <section class="content">
+                        <nav class="image"></nav>
+                        <nav class="informs">
+                            <div class="produto">
+                                Amplificadores
+                            </div>
+                            <div class="categoria" style="font-size: 16px;">
+                                — Equipamentos —
+                            </div>
+                            <div class="descricao" style="font-size: 16px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cupiditate eos labore
+                                architecto consequuntur repellat obcaecati ipsam perferendis amet, vel quam facere,
+                                reprehenderit natus. Odit, ratione accusamus! Consectetur, rerum unde.
+                            </div>
+                            <a href="produtos.html#amps">Veja mais <span>&#8594</span></a>
+                        </nav>
+                    </section>
+                </section>
+            </section>
+            <section class="setas">
+                <button id="anterior">
+                    <</button>
+                        <button id="proximo">></button>
+            </section>
+            <ul class="pontos_nav">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="funcionarios">
+            <p class="putas"></p>
+            <h2><span>Nosso</span> time</h2>
+            <nav class="funcionarios__cards">
+                <article>
+                    <img src="images/funcionario_2.jpg" alt="">
+                    <h3 class="nome">Fabiana Maciel</h3>
+                    <h4>Analista de Importação</h4>
+                    <nav class="social__media">
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-twitter-x-line"></i></a>
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                    </nav>
+                </article>
+                <article>
+                    <img src="images/funcionario_1.jpg" alt="">
+                    <h3 class="nome">Eduardo Paes</h3>
+                    <h4>Analista de marketing</h4>
+                    <nav class="social__media">
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-twitter-x-line"></i></a>
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                    </nav>
+                </article>
+                <article>
+                    <img src="images/funcionario_3.jpg" alt="">
+                    <h3 class="nome">Ana Marroco</h3>
+                    <h4>Analista de suporte</h4>
+                    <nav class="social__media">
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-twitter-x-line"></i></a>
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                    </nav>
+                </article>
+                <article>
+                    <img src="images/Design sem nome (3).png" alt="">
+                    <h3 class="nome">Marcus Santana</h3>
+                    <h4>Desenvolvedor</h4>
+                    <nav class="social__media">
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-twitter-x-line"></i></a>
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                        <a href="https://www.instagram.com/_santanyo/"><i class="ri-instagram-line"></i></a>
+                    </nav>
+                </article>
+            </nav>
+        </section>
+        <section class="sobre_nos">
+            <h2>Sobre <span>nós</span></h2>
+            <br>
+            <p>A maior importadora de equipamentos sonoros e instrumentos musicais do país.</p>
+            <nav class="main_content">
+                <img src="images/a-3d-illustration-of-a-clean-modern-and-_NK3H4rfURiCMzjOQ2_iXTw_Hb8WkNOxT9eTnYoRaU7T2g.jpeg" alt="">
+                <p><span>Nós somos Draven!</span><br><br><br>A Draven Guitars é uma loja especializada na importação de
+                    instrumentos musicais que não estão disponíveis no Brasil. Nosso objetivo é conectar músicos de
+                    todos os níveis com guitarras, baixos e equipamentos exclusivos, trazendo o melhor da qualidade
+                    internacional para o cenário nacional. <br><br>Trabalhamos com um processo de importação seguro e
+                    transparente, garantindo que cada cliente tenha acesso aos melhores instrumentos sem complicações.
+                    Seja você um profissional, um entusiasta ou um colecionador, estamos aqui para ajudar a encontrar o
+                    equipamento ideal para seu estilo e necessidade. <br><br>Na Draven Guitars, a paixão pela música nos
+                    move. Entre em contato e descubra como podemos trazer o seu instrumento dos sonhos para mais perto
+                    de você!<br><br>Na Draven Guitars, entendemos que cada músico é único, e por isso nos dedicamos a oferecer um atendimento personalizado, ajudando nossos clientes a encontrar o instrumento perfeito para suas preferências e estilo de vida. Trabalhamos com as melhores marcas internacionais, garantindo que cada guitarra, baixo ou acessório importado seja de altíssima qualidade e atenda às expectativas dos músicos mais exigentes.<br>
+                    <a href="sobre_nos.html"><button>Ler mais</button></a>
+                </p>
+
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer_inicial">
+            <img src="images/imagem_footer.jpg" alt="">
+            <h1>DRAVEN</h1>
+            <div class="social__footer">
+                <a href="" class="facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="" class="twitter"><i class="ri-twitter-x-line"></i></a>
+                <a href="" class="linkedin"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://www.instagram.com/dravenguitarshop/" class="instagram"><i class="ri-instagram-line"></i></a>
+                <a href="" class="youtube"><i class="ri-youtube-fill"></i></i></a>
+            </div>
+        </nav>
+        <hr>
+        <section class="footer_body">
+            <nav class="footer__links">
+                <h1><span>Instituc</span>ional</h1>
+                <a href="index.html"><p>Home</p></a>
+                <a href="fale_conosco.html"><p>Fale conosco</p></a>
+                <a href="sobre_nos.html"><p>Sobre nós</p></a>
+                <a href="encomende.html"><p>Encomende já</p></a>
+            </nav>
+            <nav class="footer__links">
+                <h1><span>Serv</span>iços</h1>
+                <a href="produtos.html#guitarra"><p>Guitarras</p></a>
+                <a href="produtos.html#baixo"><p>Baixos</p></a>
+                <a href="produtos.html#pedal"><p>Pedais e pedaleiras</p></a>
+                <a href="produtos.html#amps"><p>Amplificadores</p></a>
+            </nav>
+            <nav class="footer__links">
+                <h1><span>Dúv</span>idas</h1>
+                <a href=""><p>Devoluções</p></a>
+                <a href=""><p>Fale com a gente</p></a>
+                <a href=""><p>Dúvidas frequentes</p></a>
+                <a href=""><p>Processo de entrega</p></a>
+            </nav>
+            <nav class="footer__links">
+                <h1><span>Políti</span>cas e <span>regulam</span>entos</h1>
+                <a href=""><p>Regras do site</p></a>
+                <a href=""><p>Politica de segurança</p></a>
+                <a href=""><p>Regras para compras internacionais</p></a>
+                <a href=""><p>Termos & condições</p></a>
+            </nav>
+            <nav class="footer__links">
+                <nav class="novidades">
+                    <h1><span>Novid</span>ades</h1>
+                    <form action="">
+                        <input type="text" name="email" id="email" placeholder="Digite seu email..." required>
+                        <label for="email"></label>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </nav>
+            </nav>
+        </section>
+        
+        <section class="footer_end">
+           <p>Copyright &copy; 2025 Draven Guitars. <span>Todos os direitos reservados</span></p>
+           <a href=""><h6>Politica de privacidade</h6></a>
+           <a href=""><h6>Termos & condições</h6></a>
+        </section>
+    </footer>
+
+    <div class="loader-wrapper">
+    <div class="hourglass"></div>
+    </div>
+    
+  <!-- <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script> -->
+
+<script>
+
+$(window).on("load", function(){
+   $(".loader-wrapper").fadeOut(800)
+   ( $("body").removeClass("preload") )
+   ( $("body").removeClass("preload") )
+})
+
+    ScrollReveal(
+        {reset: true,
+        distance: '10px',
+        duration: 2500,
+        delay: 400});
+
+        ScrollReveal().reveal('.carousel h1', { delay: 200, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.carousel h1 p', { delay: 300, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.carousel h1 a button', { delay: 670, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.pic-ctn', { delay: 100, origin: 'right'});
+        ScrollReveal().reveal('.info .info__cards article', { delay: 0, origin: 'bottom', interval: 150});
+        ScrollReveal().reveal('.funcionarios h2', { delay: 200, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.funcionarios .funcionarios__cards', { delay: 400, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.sobre_nos h2', { delay: 50, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.sobre_nos p', { delay: 100, origin: 'left', distance: '40px'});
+        ScrollReveal().reveal('.sobre_nos .main_content', { delay: 400, origin: 'left', distance: '40px'});
+
+
+
+
+    
+</script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
