@@ -3735,7 +3735,7 @@ font-size: calc(0px + (24 - 16) * (55vw - 320px) / (1280 - 320));
 
     .fale_body .fale__estrutura input,
     .fale_body .fale__estrutura .msg {
-        width: 250px;
+        width: 310px;
         padding: 8px;
         font-size: 16px;
         box-sizing: border-box;
